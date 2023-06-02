@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <div class="bdr w-25 mb-3"></div>
+      <h2>Trending</h2>
+      <h2>Movies</h2>
+      <h2>To Show Today</h2>
+      <span class="hint">Most Watched Movies Today</span>
+      <div class="bdr w-100 mt-3"></div>
+    </div>
+  </div>
+  <div *ngFor="let movie of trendingMovies" class="col-md-2 mb-3">
+    <div>
+      <img class="w-100" src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}" />
+      <h3>{{movie.title}}</h3>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <div class="bdr w-25 mb-3"></div>
+      <h2>Trending</h2>
+      <h2>TV Shows</h2>
+      <h2>To Show Today</h2>
+      <span class="hint">Most Watched TV Shows Today</span>
+      <div class="bdr w-100 mt-3"></div>
+    </div>
+  </div>
+  <div *ngFor="let tv of trendingTvShows" class="col-md-2 mb-3">
+    <div>
+      <img class="w-100" src="https://image.tmdb.org/t/p/original/{{tv.backdrop_path}}" />
+      <h3>{{tv.name}}</h3>
+    </div>
+  </div>
+</div>

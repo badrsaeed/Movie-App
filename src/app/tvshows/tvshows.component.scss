@@ -1,0 +1,8 @@
+@import '../../styles.scss';
+
+.bdr{
+  border: $borderColor $borderHeight solid;
+}
+.hint{
+  color: $secondFontColor;
+}
